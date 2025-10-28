@@ -59,9 +59,9 @@ include(GNUInstallDirs)
 # Directory configuration
 #----------------------------------------------
 
-set(NFX_DATATYPES_ROOT_DIR           "${CMAKE_CURRENT_SOURCE_DIR}"       CACHE PATH  "Root directory"     )
-set(NFX_DATATYPES_INCLUDE_DIR        "${NFX_DATATYPES_ROOT_DIR}/include"  CACHE PATH  "Include directory"  )
-set(NFX_DATATYPES_SOURCE_DIR         "${NFX_DATATYPES_ROOT_DIR}/src"      CACHE PATH  "Source directory"   )
+set(NFX_DATATYPES_ROOT_DIR           "${CMAKE_CURRENT_SOURCE_DIR}"        CACHE PATH  "Root directory"    )
+set(NFX_DATATYPES_INCLUDE_DIR        "${NFX_DATATYPES_ROOT_DIR}/include"  CACHE PATH  "Include directory" )
+set(NFX_DATATYPES_SOURCE_DIR         "${NFX_DATATYPES_ROOT_DIR}/src"      CACHE PATH  "Source directory"  )
 
 #----------------------------------------------
 # Output directory configuration

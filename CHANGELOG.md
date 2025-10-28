@@ -31,6 +31,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.1] - 2025-10-28
+
+### Changed
+
+- **GitHub Actions Release Workflow**
+
+  - Added mandatory tag validation to prevent accidental releases
+  - Added semantic versioning format verification (X.Y.Z)
+  - Added `create-release` job to create GitHub release first
+  - Added job dependencies (`needs: create-release`) for proper release workflow ordering
+  - Set all release uploads to `draft: true` for manual review before publishing
+  - Removed problematic `github.ref_name` fallback that could create "main" releases
+  - Changed `fail_on_unmatched_files` to `false` for better error handling
+  - Added GCC-14 installation via PPA for Ubuntu 22.04 compatibility
+  - Added package verification steps for all build jobs (Linux, Windows, Source)
+  - Added SHA256 checksum generation for all packages
+  - Added workflow artifacts upload with 7-day retention for debugging
+  - Removed redundant CMake compiler flags (MSVC environment auto-detection)
+
+- **Documentation Configuration**
+  - Fixed Doxygen paths to use `NFX_DATATYPES_ROOT_DIR` instead of `CMAKE_SOURCE_DIR` for better modularity
+  - Updated paths in `doc/CMakeLists.txt` for README, CHANGELOG, and sample files
+
+### Added
+
+- **Release Workflow Enhancements**
+  - Package verification with detailed logging and error reporting
+  - SHA256SUMS.txt files for all Linux and Windows packages
+  - SHA256SUMS-source.txt for source packages
+  - Workflow artifacts for post-build debugging and verification
+  - Build validation before release upload
+
 ## [1.0.0] - 2025-10-26 - Initial Release
 
 ### Added
