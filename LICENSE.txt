@@ -1,7 +1,5 @@
 # MIT License
 
-nfx-datatypes - Cross-platform C++ library with high-precision Int128 and Decimal datatypes
-
 Copyright (c) 2025 nfx
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

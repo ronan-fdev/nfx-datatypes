@@ -63,7 +63,7 @@ if(Doxygen_FOUND)
 	set(DOXYGEN_SHOW_FILES               "YES")
 	set(DOXYGEN_SHOW_NAMESPACES          "YES")
 	set(DOXYGEN_FILE_PATTERNS            "*.h" "*.md")
-	set(DOXYGEN_EXAMPLE_PATH             "${NFX_DATATYPES_ROOT_DIR}/samples")
+	set(DOXYGEN_EXAMPLE_PATH             "${NFX_DATATYPES_DIR}/samples")
 	set(DOXYGEN_EXAMPLE_PATTERNS         "*.cpp")
 	set(DOXYGEN_EXAMPLE_RECURSIVE        "YES")
 
@@ -107,7 +107,7 @@ if(Doxygen_FOUND)
 	#set(DOXYGEN_HTML_STYLESHEET          "doxygen.css")
 	#set(DOXYGEN_HTML_EXTRA_STYLESHEET    "customdoxygen.css")
 	#set(DOXYGEN_HTML_EXTRA_FILES         "${CMAKE_CURRENT_SOURCE_DIR}/customdoxygen.css")
-	set(DOXYGEN_USE_MDFILE_AS_MAINPAGE   "${NFX_DATATYPES_ROOT_DIR}/README.md")
+	set(DOXYGEN_USE_MDFILE_AS_MAINPAGE   "${NFX_DATATYPES_DIR}/README.md")
 	set(DOXYGEN_HTML_COLORSTYLE          "DARK")
 	set(DOXYGEN_HTML_COLORSTYLE_HUE      "220")
 	set(DOXYGEN_HTML_COLORSTYLE_SAT      "100")
@@ -217,9 +217,9 @@ if(Doxygen_FOUND)
 	# --- Documentation Target Definition ---
 	doxygen_add_docs(documentation
 		${NFX_DATATYPES_INCLUDE_DIR}/nfx
-		${NFX_DATATYPES_ROOT_DIR}/README.md
-		${NFX_DATATYPES_ROOT_DIR}/CHANGELOG.md
-		${NFX_DATATYPES_ROOT_DIR}/benchmark/README.md
+		${NFX_DATATYPES_DIR}/README.md
+		${NFX_DATATYPES_DIR}/CHANGELOG.md
+		${NFX_DATATYPES_DIR}/benchmark/README.md
 		${NFX_DATATYPES_LICENSE_FILE}
 		ALL
 		COMMENT "Generate documentation."

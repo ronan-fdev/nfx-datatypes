@@ -31,6 +31,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.2] - 2025-10-30
+
+### Changed
+
+- Refactored directory variable naming from `NFX_DATATYPES_ROOT_DIR` to `NFX_DATATYPES_DIR` for consistency
+
+- **GitHub Actions Release Workflow**
+
+  - Removed automatic trigger on release publication to prevent GitHub Pages protection errors
+  - Documentation now deploys only via manual trigger or push to main branch
+
 ## [1.0.1] - 2025-10-28
 
 ### Changed
