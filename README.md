@@ -128,7 +128,7 @@ find_package(nfx-datatypes REQUIRED)
 target_link_libraries(your_target PRIVATE nfx-datatypes::static)
 ```
 
-###Building
+### Building
 
 ```bash
 # Clone the repository

@@ -11,20 +11,16 @@ set(PRIVATE_HEADERS)
 set(PRIVATE_SOURCES)
 
 list(APPEND PUBLIC_HEADERS
-	# --- Datatype headers ---
 	${NFX_DATATYPES_INCLUDE_DIR}/nfx/datatypes/Decimal.h
 	${NFX_DATATYPES_INCLUDE_DIR}/nfx/datatypes/Int128.h
 
-	# --- Datatype implementations ---
 	${NFX_DATATYPES_INCLUDE_DIR}/nfx/detail/datatypes/Decimal.inl
 	${NFX_DATATYPES_INCLUDE_DIR}/nfx/detail/datatypes/Int128.inl
 )
 list(APPEND PRIVATE_HEADERS
-	# --- Datatype headers files ---
 	${NFX_DATATYPES_SOURCE_DIR}/Constants.h
 )
 list(APPEND PRIVATE_SOURCES
-	# --- Datatype source files ---
 	${NFX_DATATYPES_SOURCE_DIR}/Decimal.cpp
 	${NFX_DATATYPES_SOURCE_DIR}/Int128.cpp
 )

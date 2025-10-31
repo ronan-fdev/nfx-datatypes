@@ -7,7 +7,7 @@
 #   find_package(nfx-datatypes REQUIRED)
 #   target_link_libraries(your_target PRIVATE nfx-datatypes::nfx-datatypes)  # Shared library
 #   # OR
-#   target_link_libraries(your_target PRIVATE nfx-datatypes::static)        # Static library
+#   target_link_libraries(your_target PRIVATE nfx-datatypes::static)         # Static library
 #
 # Available targets:
 #   nfx-datatypes::nfx-datatypes - Shared library (Int128, Decimal)
