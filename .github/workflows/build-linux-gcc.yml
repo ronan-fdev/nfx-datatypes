@@ -30,7 +30,7 @@ permissions:
 
 jobs:
   build-linux-gcc:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: Ubuntu GCC 14
 
     steps:

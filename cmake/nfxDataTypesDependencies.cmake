@@ -61,7 +61,7 @@ if(NFX_DATATYPES_BUILD_BENCHMARKS)
 		message(STATUS "Google Benchmark not found on system, using FetchContent")
 		
 		set(BENCHMARK_ENABLE_TESTING         OFF  CACHE BOOL  "Build benchmark tests"                          FORCE)
-		set(BENCHMARK_ENABLE_EXCEPTIONS      OFF  CACHE BOOL  "Enable exceptions in benchmark library"         FORCE)
+		set(BENCHMARK_ENABLE_EXCEPTIONS      ON   CACHE BOOL  "Enable exceptions in benchmark library"         FORCE)
 		set(BENCHMARK_ENABLE_LTO             OFF  CACHE BOOL  "Enable link time optimization"                  FORCE)
 		set(BENCHMARK_USE_LIBCXX             OFF  CACHE BOOL  "Use libc++ as the standard library"             FORCE)
 		set(BENCHMARK_ENABLE_WERROR          OFF  CACHE BOOL  "Treat warnings as errors"                       FORCE)

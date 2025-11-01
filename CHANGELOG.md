@@ -13,7 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- NIL
+- **GitHub Actions Workflows**
+  - All workflows now use `actions/upload-artifact@v5` for consistency
+  - `release.yml` now builds with GCC-14 (installed via PPA)
+  - `documentation.yml` trigger changed from `release: [published]` to `push: main` with path filters to prevent GitHub Pages protection errors
+  - `documentation.yml` now automatically rebuilds when documentation-related files are modified
 
 ### Deprecated
 
@@ -25,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- NIL
+- GitHub Pages deployment errors when publishing releases from tags
 
 ### Security
 

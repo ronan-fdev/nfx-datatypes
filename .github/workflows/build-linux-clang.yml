@@ -30,7 +30,7 @@ permissions:
 
 jobs:
   build-linux-clang:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: Ubuntu Clang 18
 
     steps:
