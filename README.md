@@ -68,24 +68,26 @@ nfx-datatypes is a modern C++20 library providing numeric types for applications
 ### CMake Integration
 
 ```cmake
-# Build options
-option(NFX_DATATYPES_BUILD_STATIC         "Build static library"               ON  )
-option(NFX_DATATYPES_BUILD_SHARED         "Build shared library"               ON  )
+# Build optimization
 option(NFX_DATATYPES_USE_CACHE            "Enable compiler cache"              ON  )
 
+# Build options
+option(NFX_DATATYPES_BUILD_STATIC         "Build static library"               ON  )
+option(NFX_DATATYPES_BUILD_SHARED         "Build shared library"               OFF )
+
 # Development options
-option(NFX_DATATYPES_BUILD_TESTS          "Build tests"                        ON  )
-option(NFX_DATATYPES_BUILD_SAMPLES        "Build samples"                      ON  )
-option(NFX_DATATYPES_BUILD_BENCHMARKS     "Build benchmarks"                   ON  )
-option(NFX_DATATYPES_BUILD_DOCUMENTATION  "Build Doxygen documentation"        ON  )
+option(NFX_DATATYPES_BUILD_TESTS          "Build tests"                        OFF )
+option(NFX_DATATYPES_BUILD_SAMPLES        "Build samples"                      OFF )
+option(NFX_DATATYPES_BUILD_BENCHMARKS     "Build benchmarks"                   OFF )
+option(NFX_DATATYPES_BUILD_DOCUMENTATION  "Build Doxygen documentation"        OFF )
 
 # Installation and packaging
-option(NFX_DATATYPES_INSTALL_PROJECT      "Install project"                    ON  )
-option(NFX_DATATYPES_PACKAGE_SOURCE       "Enable source package generation"   ON  )
-option(NFX_DATATYPES_PACKAGE_ARCHIVE      "Enable TGZ/ZIP package generation"  ON  )
-option(NFX_DATATYPES_PACKAGE_DEB          "Enable DEB package generation"      ON  )
-option(NFX_DATATYPES_PACKAGE_RPM          "Enable RPM package generation"      ON  )
-option(NFX_DATATYPES_PACKAGE_WIX          "Enable WiX MSI installer"           ON  )
+option(NFX_DATATYPES_INSTALL_PROJECT      "Install project"                    OFF )
+option(NFX_DATATYPES_PACKAGE_SOURCE       "Enable source package generation"   OFF )
+option(NFX_DATATYPES_PACKAGE_ARCHIVE      "Enable TGZ/ZIP package generation"  OFF )
+option(NFX_DATATYPES_PACKAGE_DEB          "Enable DEB package generation"      OFF )
+option(NFX_DATATYPES_PACKAGE_RPM          "Enable RPM package generation"      OFF )
+option(NFX_DATATYPES_PACKAGE_WIX          "Enable WiX MSI installer"           OFF )
 ```
 
 ### Using in Your Project
@@ -97,7 +99,7 @@ include(FetchContent)
 FetchContent_Declare(
   nfx-datatypes
   GIT_REPOSITORY https://github.com/ronan-fdev/nfx-datatypes.git
-  GIT_TAG        main  # or use specific version tag like "1.0.0"
+  GIT_TAG        main  # or use specific version tag like "1.0.2"
 )
 FetchContent_MakeAvailable(nfx-datatypes)
 
@@ -460,4 +462,4 @@ All dependencies are automatically fetched via CMake FetchContent when building 
 
 ---
 
-_Updated on October 26, 2025_
+_Updated on November 1, 2025_
